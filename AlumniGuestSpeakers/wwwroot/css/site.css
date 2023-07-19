@@ -1,0 +1,357 @@
+:root {
+    --osu-orange: #da6118;
+    --osu-black: #252525;
+    --osu-orange-accent: #e49b26;
+}
+
+html {
+    font-size: 14px;
+}
+
+body {
+    font-family: "Fjalla One",sans-serif;
+}
+
+::selection {
+    color: black;
+    background-color: var(--osu-orange);
+}
+
+.p-highlight {
+    color: var(--osu-orange);
+    font-weight: bold;
+}
+
+@media (min-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    margin-bottom: 60px;
+}
+
+.navbar-brand {
+    font-size: 2em;
+    margin-inline-start: .75em;
+}
+
+.navbar {
+    background-color: white;
+}
+
+header {
+    border-bottom: .25em solid var(--osu-orange) !important;
+}
+
+.logo {
+    height: 4em !important;
+}
+
+.banner-image {
+    width: auto;
+    min-height: 20em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-position: top;
+    background-size: cover;
+    border-bottom: .25em solid var(--osu-orange) !important;
+}
+
+.banner-image-home {
+    background-image: url('../images/home-banner.jpg');
+}
+
+.banner-image-edit-requests {
+    background-image: url('../images/170820_class_of_2021_event_021-tif.webp');
+}
+
+.banner-image-requestapplication {
+    background-image: url('../images/banner_campus_aerial.jpg');
+}
+
+.banner-image-requests {
+    background-image: url('../images/180423_watson_trading_floor_009.jpg');
+}
+
+.banner-image > h1 {
+    background-color: var(--osu-orange);
+    padding: .5em;
+    color: white;
+}
+
+.nav-link {
+    color: #4c4c4c !important;
+    font-size: 1.1em;
+}
+
+a {
+    color: var(--osu-orange);
+}
+
+    a:hover {
+        color: #a64a12;
+    }
+
+.nav-link:hover {
+    color: var(--osu-orange) !important;
+}
+
+footer {
+    background-color: black;
+    color: white;
+}
+
+    footer > div {
+        border-top: .1em dashed white !important;
+        margin-top: 1em;
+    }
+
+.subheading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1.5em;
+}
+
+p {
+    font-family: "Rubik",sans-serif;
+}
+
+.opening-blurb {
+    margin-top: 1.2em;
+    margin-bottom: 1.2em;
+    margin-inline: 3em;
+    padding: 1em;
+    padding-bottom: 2em;
+    border-bottom: .25em dashed var(--osu-orange);
+}
+
+.blurb {
+    margin-inline: 3em;
+    padding: 1em;
+    padding-bottom: 2em;
+    border-bottom: .25em dashed var(--osu-orange);
+}
+
+.blurb-no-border {
+    border-bottom:none;
+}
+
+.testimonials {
+    background-color: var(--osu-black);
+    color: white;
+    margin-inline: 0em;
+    padding-inline: 0em;
+    padding: 0em;
+    border-top: .25em dashed var(--osu-orange);
+}
+
+.testimonial-quotes {
+    padding-inline:3em;
+    padding-block:1em;
+}
+
+.testimonial-quotes > * > h2 {
+    margin-bottom:1em;
+}
+
+.quote-attribution {
+    margin-inline-start:3em;
+    font-size:1em;
+    font-style:revert !important;
+}
+
+.testimonials p {
+    font-style: italic;
+}
+
+.testimonial-image {
+    background-image: url('../images/bus-students.jpg');
+    background-position:top;
+    background-size: cover;
+    min-height:25vh;
+}
+
+.opening-blurb h2 {
+    font-size: 2em;
+}
+
+.opening-blurb p {
+    font-size: 1.1em;
+    text-justify: inter-word;
+}
+
+.button {
+    text-decoration: none;
+    padding-inline: 1em;
+    padding-block: .5em;
+    background-color: var(--osu-orange);
+    font-size: 1.25em;
+    color: white;
+    text-transform: uppercase;
+    border: none;
+    font: normal bold 1rem "Rubik",sans-serif;
+    transition: background-color 0.5s ease-out;
+}
+
+input {
+    accent-color: var(--osu-orange);
+}
+
+.form-control {
+    border-radius: unset;
+}
+
+    .form-control:focus {
+        border-color: var(--osu-orange);
+        outline: 0;
+        box-shadow: 0 0 0 0.25rem rgba(228, 155, 38, .25);
+    }
+
+.button:hover, .button:focus {
+    background-color: var(--osu-black);
+    color: white;
+}
+
+.header-card-container {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+}
+
+.header-card {
+    background-color: var(--osu-black);
+    color: white;
+    max-height: 20em;
+    width:15em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-inline:1em;
+    margin-left: 1em;
+    margin-right: 1em;
+    transition: transform .1s ease;
+}
+
+    .header-card:hover {
+        transform: scale(1.05);
+        box-shadow: 0 0 0 0.5rem var(--osu-orange);
+    }
+
+    .header-card > p:nth-child(1) {
+        font-size: 5em;
+        align-items: flex-start;
+        margin-top: .4em;
+        font-family: "Fjalla One",sans-serif;
+        margin-bottom:0em;
+    }
+
+    .header-card > p:nth-child(2) {
+        font-size: 2em;
+        text-align: center;
+    }
+
+.card, .card-img-top {
+    border-radius: unset;
+}
+
+.card:hover {
+    box-shadow:0 0 0 .1rem var(--osu-orange-accent);
+}
+
+.card-img-top {
+    aspect-ratio: 3 / 2;
+}
+
+.navbar-toggler {
+    border: none;
+}
+
+    .navbar-toggler:focus {
+        box-shadow: none !important;
+    }
+
+    .navbar-toggler:hover {
+        background-color: none !important;
+    }
+
+.navbar-toggler-icon {
+    color: var(--osu-orange);
+}
+
+.osu-orange {
+    color: var(--osu-orange);
+}
+
+.form-spacer * {
+    margin-bottom: 1em;
+}
+
+.btnCancel {
+    text-decoration: none;
+    padding-inline: 1em;
+    padding-block: .5em;
+    background-color: black;
+    font-size: 1.25em;
+    color: white;
+    text-transform: uppercase;
+    border: none;
+    font: normal bold 1rem "Rubik",sans-serif;
+}
+
+.email-input {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    background-color: var(--osu-black);
+    color: white;
+}
+
+.email-input-header {
+    background-color: var(--osu-black);
+    color: white;
+    padding-top: 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-top: .25em dashed var(--osu-orange);
+}
+
+.email-input-header h2 {
+    padding-bottom:.5em;
+    border-bottom: .1em solid var(--osu-orange);
+    margin-bottom:0em;
+}
+
+.email-input input {
+    max-width:30vw;
+}
+
+.accordion-button:not(.collapsed) {
+    color: black;
+    background-color: #f90;
+    box-shadow: inset 0 -1px 0 rgba(0,0,0,.125);
+}
+
+.times {
+    margin-top: 1.2em;
+    margin-bottom: 1.2em;
+    margin-inline: 3em;
+    padding: 1em;
+    padding-bottom: 2em;
+}
+
+textarea {
+    font-family: 'Rubik', sans-serif;
+}

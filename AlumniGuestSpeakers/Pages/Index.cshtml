@@ -1,0 +1,81 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "About Speakers";
+}
+
+<div class="banner-image banner-image-home">
+    <h1>Guest Speaking Opportunities for Alumni</h1>
+</div>
+
+<div class="row opening-blurb blurb-no-border gx-0">
+    <div class="col-md-6">
+        <h2>Once a Cowboy, always a Cowboy</h2>
+        <p>The Spears School of Business at Oklahoma State University values its MIS alumni and their guest speaking in classes. They provide <span class="p-highlight">valuable insights</span>, share <span class="p-highlight">professional experiences</span>, and offer <span class="p-highlight">real-world applications</span> of MIS concepts that benefit students. By involving alumni in the curriculum, the school keeps students informed of the latest industry trends and ensures they have the skills to <span class="p-highlight">succeed</span> in their careers.</p>
+        <a class="button" href="#professors">View Our Professors<i class="fa-solid fa-arrow-down ms-2"></i></a>
+    </div>
+    <div class="col-md-6 header-card-container mt-4 mt-md-0">
+        <div class="header-card">
+            <p>100+</p>
+            <p>Speakers so far</p>
+        </div>
+        <div class="header-card">
+            <p>30</p>
+            <p>Classes</p>
+        </div>
+    </div>
+</div>
+
+<div class="blurb testimonials">
+    <div class="row gx-0">
+        <div class="col-md-6 testimonial-quotes">
+            <div class="subheading">
+                <h2>Testimonials from Students</h2>
+            </div>
+            <p>"Mr. Smith's visit to our MIS class provided invaluable <span class="p-highlight">real-world insights</span> and practical knowledge that complemented our theoretical learning."</p>
+            <p class="quote-attribution">- Senior Student</p>
+            <p>Dr. Johnson's experience and expertise in the field of MIS gave us a fresh perspective on industry trends and helped us understand how to <span class="p-highlight">apply our knowledge</span> in a practical context."</p>
+            <p class="quote-attribution">- Freshman Student</p>
+            <p>Mrs. Garcia's interactive session not only enhanced our understanding of the subject matter but also sparked a lively discussion and <span class="p-highlight">inspired us to explore new avenues</span> in our MIS education."</p>
+            <p class="quote-attribution">- Junior Student</p>
+        </div>
+        <div class="col-md-6 testimonial-image">
+        </div>
+    </div>
+</div>
+
+<div id="professors" class="subheading">
+    <h2>Professors Currently Requesting Speakers</h2>
+</div>
+
+<div class="d-flex justify-content-between blurb blurb-no-border">
+    <div class="row">
+        @foreach (var speaker in Model.Speakers)
+        {
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="@speaker.Item1" class="card-img-top" alt="@speaker.Item2">
+                    <div class="card-body">
+                        <h5 class="card-title">@speaker.Item2</h5>
+                        <p class="card-text">@speaker.Item2 aims to provide their class with practical knowledge and hands-on experience, and invites guest speakers to share their industry insights and experiences with the students.</p>
+
+                        <a class="button" asp-page="/Requests">View openings <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        }
+
+    </div>
+</div>
+
+<div class="email-input-header">
+        <h2>Stay Updated with Opportunitites</h2>
+
+    <form>
+        <div class="email-input">
+            <input class="form-control form-control-lg" placeholder="Email" type="email" />
+            <button class="button" type="submit"><i class="fa-solid fa-arrow-right"></i></button>
+        </div>
+    </form>
+
+</div>
